@@ -1,94 +1,220 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#f6eddf" />
-<title>Project Khushi 🌻</title>
-<style>
-  :root { --paper:#fffaf1; --ink:#503c2d; --muted:#8a715d; --rose:#d99a8c; --gold:#c59a4a; --line:#e7d8c2; }
-  * { box-sizing:border-box; }
-  body { margin:0; min-height:100vh; padding:24px 14px 36px; color:var(--ink); background:radial-gradient(circle at 10% 5%,#f3dfbd 0,transparent 30%),radial-gradient(circle at 90% 90%,#efd1c9 0,transparent 30%),#f6eddf; font-family:Georgia,'Times New Roman',serif; }
-  .wrap { max-width:620px; margin:0 auto; }
-  .topline { text-align:center; font:700 11px/1.4 Arial,sans-serif; letter-spacing:3px; text-transform:uppercase; color:var(--muted); }
-  .card { margin:18px auto 0; padding:26px 22px; background:rgba(255,250,241,.92); border:1px solid var(--line); border-radius:5px 5px 18px 5px; box-shadow:0 12px 32px #65432212; position:relative; overflow:hidden; }
-  .card:before { content:' '; position:absolute; inset:8px; border:1px dashed #dfc9a9; pointer-events:none; }
-  .content { position:relative; z-index:1; }
-  .sunflower { font-size:34px; text-align:center; margin:4px 0 8px; }
-  h1 { font-size:clamp(32px,8vw,48px); line-height:1.05; text-align:center; margin:0; font-weight:normal; }
-  .subtitle { text-align:center; color:var(--muted); font-size:15px; margin:12px 0 20px; font-style:italic; }
-  .pill { display:table; margin:0 auto 18px; padding:7px 12px; border-radius:999px; background:#f1e2c9; color:#765635; font:700 11px Arial,sans-serif; letter-spacing:1px; text-transform:uppercase; }
-  .count { text-align:center; margin:0 auto 22px; padding:15px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-  .count strong { display:block; font-size:36px; font-weight:normal; }
-  .count span { font:12px Arial,sans-serif; color:var(--muted); letter-spacing:1px; text-transform:uppercase; }
-  .note { font-size:17px; line-height:1.7; white-space:pre-line; }
-  .note h2 { font-size:24px; font-weight:normal; margin:0 0 10px; }
-  .hint { color:var(--muted); font-size:13px; line-height:1.6; text-align:center; margin:20px 0 0; }
-  .stamp { text-align:center; margin-top:18px; font-size:13px; color:var(--muted); }
-  .footer { text-align:center; font:12px Arial,sans-serif; color:#8a715d; margin-top:16px; }
-  .hidden { display:none; }
-  @media(min-width:500px) { .card{padding:34px 38px;} }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Khushi 🌻</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px 14px;
+      background: #f3e7d2;
+      color: #594335;
+      font-family: Georgia, serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .paper {
+      width: 100%;
+      max-width: 560px;
+      padding: 32px 25px;
+      background: #fff9ed;
+      border: 1px solid #d9c4a4;
+      box-shadow: 5px 6px 0 #ddc9aa;
+      text-align: center;
+      position: relative;
+    }
+
+    .flowers { font-size: 27px; margin: 14px; }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(30px, 8vw, 43px);
+      margin: 15px 0;
+      color: #9c6254;
+    }
+
+    .subtitle { font-style: italic; line-height: 1.7; }
+
+    .file {
+      display: inline-block;
+      margin: 24px 0 12px;
+      padding: 8px 12px;
+      border: 1px dashed #bd947d;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .count {
+      font-size: 42px;
+      color: #b56d69;
+      margin: 8px 0;
+    }
+
+    h2 { font-size: 24px; margin-top: 20px; }
+
+    .message {
+      font-size: 16px;
+      line-height: 1.9;
+      white-space: pre-line;
+    }
+
+    .psst {
+      margin-top: 24px;
+      font-style: italic;
+      color: #9c6254;
+    }
+
+    .footer {
+      margin-top: 32px;
+      font-size: 12px;
+      line-height: 1.8;
+      color: #987d68;
+    }
+
+    .stamp {
+      margin: 24px auto 0;
+      display: inline-block;
+      border: 2px solid #bd8076;
+      color: #bd8076;
+      padding: 8px 12px;
+      transform: rotate(-5deg);
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+  </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="topline">a tiny something for someone special</div>
-  <main class="card"><div class="content">
-    <div class="sunflower">🌻 ✉️ 🌻</div>
+  <main class="paper">
+    <div class="eyebrow">a tiny something for someone special</div>
+    <div class="flowers">🌻 ✉️ 🌻</div>
+
     <h1>Project Khushi</h1>
-    <p class="subtitle">six days of nonsense, one very special human</p>
-    <div class="pill" id="dayLabel">classified friendship files</div>
-    <div class="count"><strong id="days">6</strong><span id="countLabel">days until Khushi day</span></div>
-    <section class="note" id="reveal" aria-live="polite"></section>
-    <p class="hint" id="hint">Psst… come back tomorrow. The file updates daily. 👀</p>
-    <div class="stamp">Filed with questionable levels of affection ♡</div>
-  </div></main>
-  <div class="footer">made with friendship, chaos & a sunflower 🌻</div>
-</div>
-<script>
-  // Date is read from the visitor's device. The page reveals one message per calendar day.
-  const birthday = new Date(2026, 9, 25); // October is month 9 in JavaScript.
-  const start = new Date(2026, 9, 19);
-  const messages = [
-    { date: 19, label: 'FILE 01 · SUSPICIOUS BEGINNING', title: 'Khushiiii, we need to talk. 👀', body: 'No need to panic. Yet.\n\nA very official investigation has begun into the person who spends half her life in the library and somehow still has time for chaos.\n\nYour birthday is getting closer. This is your first warning. Please remain suspicious. 🌻' },
-    { date: 20, label: 'FILE 02 · EVIDENCE OF SOFTNESS', title: 'A tiny thing I appreciate about you 🥹', body: 'You have this way of making people feel included, and I hope you know that it matters.\n\nThis is your daily reminder that behind all the drama, stubbornness and savage replies, you have a genuinely caring side. Don’t let the world make you forget that. 🤎' },
-    { date: 21, label: 'FILE 03 · CRIME SCENE', title: 'THE GARBA SLIPPERS INCIDENT 💀', body: 'The outfit? Gorgeous. The vibes? Immaculate. The footwear? A plot twist nobody asked for. 😭\n\nThe investigation remains open. The slippers are still suspects. No further questions at this time.\n\nPlease know this evidence will be brought up at the most inconvenient moments for the rest of our college lives. 🩴⚖️' },
-    { date: 22, label: 'FILE 04 · FRIENDSHIP RECEIPT', title: 'Okay, one soft moment. 🤎', body: 'I’m glad college brought us together. Thank you for the little moments, the random laughter, and for making me feel included.\n\nThis is not an emotional speech, so don’t get used to it. I have a reputation to maintain. 😭🫶🏻' },
-    { date: 23, label: 'FILE 05 · THE CLUE', title: 'A very important hint… 🕵🏻‍♀️', body: 'Something is being prepared for you. It involves effort, affection, and absolutely no guarantee that I will behave normally about it.\n\nClue: it’s not another lecture about your slippers. (Okay, it might be mentioned once.)\n\nTomorrow is the final file. Be ready. 👀' },
-    { date: 24, label: 'FILE 06 · TOMORROW', title: 'MADAM, YOUR DAY IS ALMOST HERE 🎂', body: 'That’s all the secret files for now. 🥹🌻\n\nTomorrow is your birthday, so I hope you make room for all the love, happiness, good food and attention you deserve.\n\nYour final surprise is not on this screen. It’s something made by hand, with love. So save a little space in your day for me, okay? 🤎\n\nP.S. Wear sensible footwear next Garba night. I’m begging.' },
-    { date: 25, label: 'CASE CLOSED · BIRTHDAY GIRL', title: 'HAPPY BIRTHDAY, KHUSHIIII! 🎂🌻', body: 'The countdown files are officially closed. Today is all yours. 🤎\n\nI have something for you in real life, so the screen is taking a step back now. Go enjoy your day, let people love you, and remember that you deserve beautiful things—not just on your birthday, but on ordinary days too.\n\nNow go find Sneha. Your handwritten surprise is waiting. 🫶🏻'
+    <div class="subtitle">six days of nonsense, one very special human</div>
+
+    <div class="file" id="file">FILE 01 · SUSPICIOUS BEGINNING</div>
+    <div class="count" id="count">6</div>
+    <div id="countLabel">days until Khushi day</div>
+
+    <h2 id="heading">Khushiiii, we need to talk. 👀</h2>
+    <div class="message" id="message"></div>
+    <div class="psst" id="psst"></div>
+
+    <div class="stamp">TOP SECRET ♡</div>
+
+    <div class="footer">
+      Filed with questionable levels of affection ♡<br />
+      made with friendship, chaos & a sunflower 🌻
+    </div>
+  </main>
+
+  <script>
+    const files = [
+      {
+        title: "FILE 01 · SUSPICIOUS BEGINNING",
+        heading: "Khushiiii, we need to talk. 👀",
+        message: "No need to panic. Yet. A very official investigation has begun into the person who spends half her life in the library and somehow still has time for chaos. Your birthday is getting closer. This is your first warning. Please remain suspicious. 🌻",
+        psst: "Psst… come back tomorrow. The file updates daily. 👀"
+      },
+      {
+        title: "FILE 02 · A LITTLE APPRECIATION",
+        heading: "Under investigation: your heart 🥹",
+        message: "Okay, serious evidence today. You have this way of making people feel included, and I don't think you realise how much that matters. I'm genuinely glad we became friends. Consider this an official record of one very lovely thing about you. 💌",
+        psst: "That's enough softness for today. Maybe. Come back tomorrow. 🌻"
+      },
+      {
+        title: "FILE 03 · THE SLIPPER INCIDENT",
+        heading: "WE NEED TO DISCUSS GARBA. 😭",
+        message: "The outfit? Gorgeous. The garba vibes? Immaculate. The slippers? ICONIC. Khushi, the way you paired slippers with your garba outfit deserves its own case file. Fashion rules were questioned. Comfort won. History was made. I will never let you forget this. 🤚🏻",
+        psst: "Evidence preserved forever. Don't try to deny it. 👀"
+      },
+      {
+        title: "FILE 04 · FRIENDSHIP EVIDENCE",
+        heading: "A small thing that means a lot. 🫶🏻",
+        message: "Some people make a place feel a little less unfamiliar, and you've done that for me. Thank you for making me feel included and for being your chaotic, caring, funny self. I'm glad this friendship became one of my little college things to treasure. 🌻",
+        psst: "One more file tomorrow. No peeking ahead. 💌"
+      },
+      {
+        title: "FILE 05 · THE MYSTERY CLUE",
+        heading: "Your birthday case has a suspect. 👀",
+        message: "Clue number one: someone is planning something. Clue number two: there may be paper involved. Clue number three: you are absolutely not getting the full explanation yet. Your only job is to stay curious and continue being suspicious of me. 🕵🏻‍♀️",
+        psst: "The final digital file arrives tomorrow. 🌻"
+      },
+      {
+        title: "FILE 06 · THE NIGHT BEFORE",
+        heading: "Khushiiii, TOMORROW. 🥹",
+        message: "Six days of nonsense have led us here. Tomorrow is your day, and I hope it brings you so much laughter, love, good food and all the little things that make you happy. There's something waiting for you from me, and this is your last digital clue.",
+        psst: "Tomorrow, no more clues. Just me, you, and a little something made with love. 💌🌻"
+      }
+    ];
+
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth();
+    const day = today.getDate();
+
+    const birthday = new Date(year, 9, 25);
+    const daysLeft = Math.ceil(
+      (new Date(year, 9, 25) - new Date(year, month, day)) /
+      (1000 * 60 * 60 * 24)
+    );
+
+    const validDates = month === 9 && day >= 19 && day <= 24;
+    const fileIndex = validDates ? day - 19 : -1;
+
+    document.getElementById("count").textContent =
+      Math.max(0, Math.min(6, daysLeft));
+
+    document.getElementById("countLabel").textContent =
+      day === 25 && month === 9
+        ? "IT'S KHUSHI DAY!! 🎂"
+        : daysLeft === 1
+        ? "day until Khushi day"
+        : "days until Khushi day";
+
+    if (fileIndex >= 0) {
+      const file = files[fileIndex];
+      document.getElementById("file").textContent = file.title;
+      document.getElementById("heading").textContent = file.heading;
+      document.getElementById("message").textContent = file.message;
+      document.getElementById("psst").textContent = file.psst;
+    } else if (month === 9 && day === 25) {
+      document.getElementById("file").textContent =
+        "FINAL FILE · KHUSHI DAY 🎂";
+      document.getElementById("heading").textContent =
+        "Happy birthday, Khushiiii! 🌻";
+      document.getElementById("message").textContent =
+        "Today is all about you. I hope your day is full of love, laughter, and all the happiness you deserve. Your final surprise is not on this screen… it's something handwritten, just for you. 💌";
+      document.getElementById("psst").textContent =
+        "Go find your letter. Happy Khushi day! 🫶🏻";
+    } else if (month > 9 || (month === 9 && day > 25)) {
+      document.getElementById("file").textContent = "CASE CLOSED ♡";
+      document.getElementById("heading").textContent =
+        "The birthday investigation is complete. 🌻";
+      document.getElementById("message").textContent =
+        "The chaos, clues and affection were all filed for one very special human. Hope your birthday was beautiful, Khushi. 💌";
+      document.getElementById("psst").textContent =
+        "Until the next suspicious investigation… 👀";
+    } else {
+      document.getElementById("file").textContent = "CASE NOT YET OPEN";
+      document.getElementById("heading").textContent =
+        "A little mystery is on its way. 👀";
+      document.getElementById("message").textContent =
+        "Come back from October 19 for your first file. 🌻";
+      document.getElementById("psst").textContent =
+        "This investigation begins soon. 💌";
     }
-  ];
-  const now = new Date();
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const reveal = document.getElementById('reveal');
-  const label = document.getElementById('dayLabel');
-  const days = document.getElementById('days');
-  const countLabel = document.getElementById('countLabel');
-  const hint = document.getElementById('hint');
-  const remaining = Math.ceil((birthday - today) / 86400000);
-  days.textContent = Math.max(0, remaining);
-  if (remaining === 0) countLabel.textContent = 'it is Khushi day!!';
-  else if (remaining < 0) { days.textContent = '♡'; countLabel.textContent = 'birthday memories forever'; }
-  const msg = messages.find(m => m.date === today.getDate() && today.getMonth() === 9 && today.getFullYear() === 2026);
-  if (msg) {
-    label.textContent = msg.label;
-    reveal.innerHTML = '<h2></h2><div></div>';
-    reveal.querySelector('h2').textContent = msg.title;
-    reveal.querySelector('div').textContent = msg.body;
-  } else if (today < start) {
-    label.textContent = 'THE FILES ARE SEALED';
-    reveal.innerHTML = '<h2 style="text-align:center">Too early, detective. 🕵🏻‍♀️</h2><div style="text-align:center">The first file opens on 19 October. Come back then. 🌻</div>';
-    hint.textContent = 'The countdown has not started yet.';
-  } else if (today > birthday) {
-    label.textContent = 'CASE CLOSED';
-    reveal.innerHTML = '<h2 style="text-align:center">The birthday mission is complete. 🤎</h2><div style="text-align:center">Hope the memories last longer than the slippers investigation. 🌻</div>';
-    hint.textContent = 'This little page will stay here as a memory.';
-  } else {
-    label.textContent = 'NEXT FILE NOT YET AVAILABLE';
-    reveal.innerHTML = '<h2 style="text-align:center">Nothing to see here… yet. 👀</h2><div style="text-align:center">The next file unlocks on its day. No cheating, Khushi. 😭</div>';
-    hint.textContent = 'Come back tomorrow for the next reveal.';
-  }
-</script>
+  </script>
 </body>
 </html>
